@@ -25,11 +25,20 @@ const Flatten = (props: FlattenProps) => {
         );
     } else if (isObject) {
         return (
-            Object.keys(props.node).map((key: any) => (
-                <div className={"map-entry"} key="dupa">{key} - <Flatten node={props.node[key]}/></div>
-            ))
+            <div className={"map-container"}>{
+                Object.keys(props.node).map((key: any) => (
+                    <div className={"map-entry"} key="dupa">{key} - <Flatten node={props.node[key]}/></div>
+                ))}
+            </div>
         );
     } else {
+        const is_bool = typeof props.node === "boolean";
+
+        if (is_bool) {
+            return (
+                <div className={"final-content"}>{props.node ? "true" : "false"}</div>
+            );
+        }
         return (
             <div className={"final-content"}>{props.node}</div>
         );
