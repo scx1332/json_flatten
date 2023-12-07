@@ -2,10 +2,8 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import Dashboard from "./Dashboard";
-import { ConfigProvider } from "./ConfigProvider";
 import { BrowserRouter } from "react-router-dom";
 import { Routes, Route } from "react-router-dom";
-import { BackendSettingsProvider } from "./BackendSettingsProvider";
 
 const rootEl = document.getElementById("root");
 if (!rootEl) {
@@ -23,15 +21,11 @@ if (FRONTEND_BASE != "/" && !baseUri.includes(FRONTEND_BASE)) {
 } else {
     root.render(
         <React.StrictMode>
-            <BackendSettingsProvider>
-                <ConfigProvider>
-                    <BrowserRouter basename={FRONTEND_BASE}>
-                        <Routes>
-                            <Route path="/*" element={<Dashboard />} />
-                        </Routes>
-                    </BrowserRouter>
-                </ConfigProvider>
-            </BackendSettingsProvider>
+            <BrowserRouter basename={FRONTEND_BASE}>
+                <Routes>
+                    <Route path="/*" element={<Dashboard />} />
+                </Routes>
+            </BrowserRouter>
         </React.StrictMode>,
     );
 }

@@ -1,24 +1,9 @@
 import React from "react";
 import "./Dashboard.css";
 import { Routes, Route, Link } from "react-router-dom";
-import { useConfigResult } from "./ConfigProvider";
-import BackendSettingsPage from "./BackendSettingsPage";
 import WelcomePage from "./WelcomePage";
 
 const Dashboard = () => {
-    const configResult = useConfigResult();
-
-    if (configResult.error) {
-        return (
-            <div>
-                <div>{configResult.error}</div>
-                <BackendSettingsPage />
-            </div>
-        );
-    }
-    if (configResult.config == null) {
-        return <div>Loading... {configResult.progress}</div>;
-    }
     return (
         <div>
             <div>
@@ -36,14 +21,6 @@ const Dashboard = () => {
                         <Route path="/" element={<WelcomePage />} />
                         <Route path="page2" element={<div>Page 2</div>} />
                         <Route path="page3" element={<div>Page 3</div>} />
-                        <Route
-                            path="backend"
-                            element={
-                                <div>
-                                    <BackendSettingsPage />
-                                </div>
-                            }
-                        />
                     </Routes>
                 </div>
             </div>
