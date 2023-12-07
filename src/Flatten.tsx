@@ -14,19 +14,24 @@ const Flatten = (props: FlattenProps) => {
     //iterate over json and return a list of elements in div
     if (isArray) {
         return (
-            props.node.map((item: any) => (
-                <div key="dupa"><Flatten node={item}/></div>
-            ))
+            <div className={"array-container"}>{
+                props.node.map((item: any) => (
+                    <div className={"array-entry"} key="dupa">
+                        <Flatten node={item}/>
+                    </div>
+                ))
+            }
+            </div>
         );
     } else if (isObject) {
         return (
             Object.keys(props.node).map((key: any) => (
-                <div key="dupa">{key} - <Flatten node={props.node[key]}/></div>
+                <div className={"map-entry"} key="dupa">{key} - <Flatten node={props.node[key]}/></div>
             ))
         );
     } else {
         return (
-            <div key="dupa">{props.node}</div>
+            <div className={"final-content"}>{props.node}</div>
         );
     }
 

@@ -5,3 +5,26 @@
     justify-content: center;
     align-items: center;
 }
+
+.key-entry {
+    border: 1px solid green;
+    padding: 1px;
+}
+
+.array-container {
+    display: flex;
+    border: 2px solid blue;
+    flex-direction: row;
+    padding: 2px;
+}
+.map-entry {
+    border: 1px solid blue;
+    padding: 1px;
+    display: flex;
+
+}
+
+.final-content {
+    border: 1px solid red;
+    padding: 1px;
+}

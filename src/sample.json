@@ -1,0 +1,212 @@
+{
+    "chain": {
+        "goerli": {
+            "block-explorer-url": "https://goerli.etherscan.io",
+            "chain-id": 5,
+            "chain-name": "Goerli",
+            "confirmation-blocks": 0,
+            "currency-symbol": "tETH",
+            "external-source-check-interval": 300,
+            "max-fee-per-gas": 10.0,
+            "priority-fee": 1e-6,
+            "transaction-timeout": 100,
+            "rpc-endpoints": [
+                {
+                    "allowed-head-behind-secs": 60,
+                    "endpoints": "https://eth-goerli.g.alchemy.com/v2/demo,\nhttps://eth-goerli.public.blastapi.io,\nhttps://eth-goerli.api.onfinality.io/public,\nhttps://rpc.goerli.mudit.blog,\nhttps://endpoints.omniatech.io/v1/eth/goerli/public,\nhttps://rpc.goerli.eth.gateway.fm,\nhttps://goerli.blockpi.network/v1/rpc/public,\nhttps://goerli.infura.io/v3/9aa3d95b3bc440fa88ea12eaa4456161,\nhttps://rpc.ankr.com/eth_goerli,\nhttps://ethereum-goerli-rpc.allthatnode.com,\nhttps://rpc.slock.it/goerli,\nhttps://www.ethercluster.com/goerli,\nhttps://rpc.ankr.com/eth_goerli,\n",
+                    "max-timeout-ms": 5000,
+                    "names": "eth-goerli.g.alchemy.com/v2/demo,\neth-goerli.public.blastapi.io,\neth-goerli.api.onfinality.io/public,\nrpc.goerli.mudit.blog,\nendpoints.omniatech.io/v1/eth/goerli/public,\nrpc.goerli.eth.gateway.fm,\ngoerli.blockpi.network/v1/rpc/public,\ngoerli.infura.io/v3/9aa,\nrpc.ankr.com/eth_goerli,\nethereum-goerli-rpc.allthatnode.com,\nrpc.slock.it/goerli,\nwww.ethercluster.com/goerli,\nrpc.ankr.com/eth_goerli,\n",
+                    "priority": 0,
+                    "verify-interval-secs": 60
+                },
+                {
+                    "allowed-head-behind-secs": 120,
+                    "dns-source": "goerli.rpc-node.dev.golem.network.",
+                    "max-timeout-ms": 5000,
+                    "priority": 0,
+                    "verify-interval-secs": 60
+                }
+            ],
+            "faucet-client": {
+                "faucet-host": "faucet.testnet.golem.network",
+                "faucet-lookup-domain": "dev.golem.network",
+                "faucet-srv": "_goerli-faucet._tcp",
+                "faucet-srv-port": 4001,
+                "max-eth-allowed": 0.009
+            },
+            "mint-contract": {
+                "address": "0xCCA41b09C1F50320bFB41BD6822BD0cdBDC7d85C",
+                "max-glm-allowed": 400
+            },
+            "multi-contract": {
+                "address": "0x7777784f803a7bf1d7f115f849d29ce5706da64a",
+                "max-at-once": 10
+            },
+            "token": {
+                "address": "0x33af15c79d64b85ba14aaffaa4577949104b22e8",
+                "symbol": "tGLM"
+            }
+        },
+        "holesky": {
+            "block-explorer-url": "https://holesky.etherscan.io",
+            "chain-id": 17000,
+            "chain-name": "Holesky",
+            "confirmation-blocks": 0,
+            "currency-symbol": "tETH",
+            "external-source-check-interval": 300,
+            "max-fee-per-gas": 10.0,
+            "priority-fee": 1e-6,
+            "transaction-timeout": 100,
+            "rpc-endpoints": [
+                {
+                    "allowed-head-behind-secs": 120,
+                    "endpoints": "    https://holesky.publicnode.com,\n    https://1rpc.io/holesky,\n    https://rpc.ankr.com/eth_holesky,\n    https://eth-holesky.public.blastapi.io,\n    https://holesky.drpc.org,\n    https://holesky.rpc.thirdweb.com\n",
+                    "max-timeout-ms": 5000,
+                    "names": "    holesky.publicnode.com,\n    1rpc.io/holesky,\n    rpc.ankr.com/eth_holesky,\n    eth-holesky.public.blastapi.io,\n    holesky.drpc.org,\n    holesky.rpc.thirdweb.com\n",
+                    "priority": 0,
+                    "verify-interval-secs": 60
+                },
+                {
+                    "allowed-head-behind-secs": 120,
+                    "dns-source": "holesky.rpc-node.dev.golem.network.",
+                    "max-timeout-ms": 5000,
+                    "priority": 0,
+                    "verify-interval-secs": 60
+                }
+            ],
+            "faucet-client": {
+                "faucet-host": "faucet.testnet.golem.network",
+                "faucet-lookup-domain": "dev.golem.network",
+                "faucet-srv": "_holesky-faucet._tcp",
+                "faucet-srv-port": 4002,
+                "max-eth-allowed": 0.009
+            },
+            "lock-contract": {
+                "address": "0xCE78e3fe557E3754781Cc89eB7B01e940733e3F1"
+            },
+            "mint-contract": {
+                "address": "0xFACe100969FF47EB58d2CF603321B581A84bcEaC",
+                "max-glm-allowed": 400
+            },
+            "multi-contract": {
+                "address": "0xAaAAAaA00E1841A63342db7188abA84BDeE236c7",
+                "max-at-once": 10
+            },
+            "token": {
+                "address": "0x8888888815bf4DB87e57B609A50f938311EEd068",
+                "symbol": "tGLM"
+            }
+        },
+        "mainnet": {
+            "block-explorer-url": "https://etherscan.io",
+            "chain-id": 1,
+            "chain-name": "Mainnet",
+            "confirmation-blocks": 1,
+            "currency-symbol": "ETH",
+            "external-source-check-interval": 300,
+            "max-fee-per-gas": 40.0,
+            "priority-fee": 1.01,
+            "transaction-timeout": 100,
+            "rpc-endpoints": [
+                {
+                    "allowed-head-behind-secs": 120,
+                    "endpoints": "    https://virginia.rpc.blxrbdn.com,\n    https://eth-mainnet.public.blastapi.io,\n    https://rpc.ankr.com/eth,\n    https://rpc.flashbots.net,\n    https://cloudflare-eth.com,\n    https://ethereum.publicnode.com,\n    https://rpc.payload.de\n    ",
+                    "max-timeout-ms": 5000,
+                    "names": "    virginia.rpc.blxrbdn.com,\n    public.blastapi.io,\n    rpc.ankr.com/eth,rpc.flashbots.net,\n    cloudflare-eth.com,\n    ethereum.publicnode.com,\n    rpc.payload.de\n    ",
+                    "priority": 0,
+                    "verify-interval-secs": 60
+                },
+                {
+                    "allowed-head-behind-secs": 120,
+                    "dns-source": "ethereum.rpc-node.dev.golem.network.",
+                    "max-timeout-ms": 5000,
+                    "priority": 0,
+                    "verify-interval-secs": 60
+                }
+            ],
+            "token": {
+                "address": "0x7DD9c5Cba05E151C895FDe1CF355C9A1D5DA6429",
+                "symbol": "GLM"
+            }
+        },
+        "mumbai": {
+            "block-explorer-url": "https://mumbai.polygonscan.com",
+            "chain-id": 80001,
+            "chain-name": "Mumbai testnet",
+            "confirmation-blocks": 1,
+            "currency-symbol": "tMATIC",
+            "external-source-check-interval": 300,
+            "max-fee-per-gas": 14.0,
+            "priority-fee": 1.0,
+            "transaction-timeout": 60,
+            "rpc-endpoints": [
+                {
+                    "allowed-head-behind-secs": 60,
+                    "endpoints": "https://polygon-mumbai.g.alchemy.com/v2/demo,\nhttps://polygon-testnet.public.blastapi.io,\nhttps://endpoints.omniatech.io/v1/matic/mumbai/public,\nhttps://rpc-mumbai.maticvigil.com,\nhttps://polygontestapi.terminet.io/rpc,\nhttps://matic-mumbai.chainstacklabs.com,\nhttps://matic-testnet-archive-rpc.bwarelabs.com,\nhttps://rpc.ankr.com/polygon_mumbai,\nhttps://polygon-testnet-archive.allthatnode.com:8545,\nhttps://polygon-testnet-rpc.allthatnode.com:8545,\n",
+                    "max-timeout-ms": 5000,
+                    "names": "polygon-mumbai.g.alchemy.com/v2/demo,\npolygon-testnet.public.blastapi.io,\nendpoints.omniatech.io/v1/matic/mumbai/public,\nrpc-mumbai.maticvigil.com,\npolygontestapi.terminet.io/rpc,\nmatic-mumbai.chainstacklabs.com,\nmatic-testnet-archive-rpc.bwarelabs.com,\nrpc.ankr.com/polygon_mumbai,\npolygon-testnet-archive.allthatnode.com:8545,\npolygon-testnet-rpc.allthatnode.com:8545,\n",
+                    "priority": 0
+                },
+                {
+                    "allowed-head-behind-secs": 120,
+                    "dns-source": "mumbai.rpc-node.dev.golem.network.",
+                    "max-timeout-ms": 5000,
+                    "priority": 0,
+                    "verify-interval-secs": 60
+                }
+            ],
+            "multi-contract": {
+                "address": "0x800010D7d0d315DCA795110ecCf0127cBd76b89f",
+                "max-at-once": 10
+            },
+            "token": {
+                "address": "0x2036807B0B3aaf5b1858EE822D0e111fDdac7018",
+                "symbol": "tGLM"
+            }
+        },
+        "polygon": {
+            "block-explorer-url": "https://polygonscan.com",
+            "chain-id": 137,
+            "chain-name": "Polygon mainnet",
+            "confirmation-blocks": 1,
+            "currency-symbol": "MATIC",
+            "external-source-check-interval": 300,
+            "max-fee-per-gas": 500.0,
+            "priority-fee": 30.111,
+            "transaction-timeout": 100,
+            "rpc-endpoints": [
+                {
+                    "allowed-head-behind-secs": 120,
+                    "endpoints": "https://polygon-rpc.com,\nhttps://rpc-mainnet.maticvigil.com,\nhttps://rpc-mainnet.matic.quiknode.pro,\nhttps://bor.golem.network,\nhttps://polygon-mainnet-archive.allthatnode.com:8545,\nhttps://polygon-mainnet-rpc.allthatnode.com:8545,\n",
+                    "max-timeout-ms": 5000,
+                    "names": "polygon-rpc.com,\nrpc-mainnet.maticvigil.com,\nrpc-mainnet.matic.quiknode.pro,\nbor.golem.network,\npolygon-mainnet-archive.allthatnode.com:8545,\npolygon-mainnet-rpc.allthatnode.com:8545,\n",
+                    "priority": 0
+                },
+                {
+                    "allowed-head-behind-secs": 120,
+                    "dns-source": "polygon.rpc-node.dev.golem.network.",
+                    "max-timeout-ms": 5000,
+                    "priority": 0,
+                    "verify-interval-secs": 60
+                }
+            ],
+            "token": {
+                "address": "0x0B220b82F3eA3B7F6d9A1D8ab58930C064A2b5Bf",
+                "symbol": "GLM"
+            }
+        }
+    },
+    "engine": {
+        "automatic-recover": false,
+        "gather-at-start": true,
+        "gather-interval": 60,
+        "ignore-deadlines": false,
+        "process-interval": 15,
+        "process-interval-after-error": 25,
+        "process-interval-after-no-gas-or-token-increase": 1.5,
+        "process-interval-after-no-gas-or-token-max": 40,
+        "process-interval-after-no-gas-or-token-start": 20,
+        "process-interval-after-send": 30,
+        "report-alive-interval": 10
+    }
+}
